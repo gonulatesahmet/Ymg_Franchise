@@ -1,0 +1,6 @@
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_ELL\bin\Debug\FRANCHISE_ELL.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_ELL\bin\Debug\FRANCHISE_ELL.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_ELL\obj\Debug\FRANCHISE_ELL.csproj.CoreCompileInputs.cache
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_ELL\obj\Debug\FRANCHISE_ELL.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_ELL\obj\Debug\FRANCHISE_ELL.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_ELL\obj\Debug\FRANCHISE_ELL.csproj.AssemblyReference.cache

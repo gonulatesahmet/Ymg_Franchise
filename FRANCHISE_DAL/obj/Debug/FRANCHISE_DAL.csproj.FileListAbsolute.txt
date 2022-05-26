@@ -1,0 +1,9 @@
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_DAL\bin\Debug\FRANCHISE_DAL.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_DAL\bin\Debug\FRANCHISE_DAL.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_DAL\bin\Debug\FRANCHISE_ELL.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_DAL\bin\Debug\FRANCHISE_ELL.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_DAL\obj\Debug\FRANCHISE_DAL.csproj.CoreCompileInputs.cache
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_DAL\obj\Debug\FRANCHISE_DAL.csproj.CopyComplete
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_DAL\obj\Debug\FRANCHISE_DAL.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_DAL\obj\Debug\FRANCHISE_DAL.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\c#\FRANCHISE\FRANCHISE_DAL\obj\Debug\FRANCHISE_DAL.csproj.AssemblyReference.cache

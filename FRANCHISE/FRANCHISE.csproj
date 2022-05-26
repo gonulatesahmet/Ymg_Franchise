@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B884F2C-4C58-4BCF-BF90-F897524F7759}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FRANCHISE</RootNamespace>
+    <AssemblyName>FRANCHISE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BranchBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchBoard.Designer.cs">
+      <DependentUpon>BranchBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchBoardDeatil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchBoardDeatil.Designer.cs">
+      <DependentUpon>BranchBoardDeatil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchBoardStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchBoardStatus.Designer.cs">
+      <DependentUpon>BranchBoardStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchDailyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchDailyReport.Designer.cs">
+      <DependentUpon>BranchDailyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchEmployee.Designer.cs">
+      <DependentUpon>BranchEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchGetPaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchGetPaid.Designer.cs">
+      <DependentUpon>BranchGetPaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchGetPaidDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchGetPaidDetail.Designer.cs">
+      <DependentUpon>BranchGetPaidDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchMonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchMonthlyReport.Designer.cs">
+      <DependentUpon>BranchMonthlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchStockStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchStockStatus.Designer.cs">
+      <DependentUpon>BranchStockStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeControlCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeControlCode.Designer.cs">
+      <DependentUpon>EmployeeControlCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsAppellation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsAppellation.Designer.cs">
+      <DependentUpon>InsAppellation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsAuthority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsAuthority.Designer.cs">
+      <DependentUpon>InsAuthority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsBoardStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsBoardStatus.Designer.cs">
+      <DependentUpon>InsBoardStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsBranch.Designer.cs">
+      <DependentUpon>InsBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsDailyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsDailyReport.Designer.cs">
+      <DependentUpon>InsDailyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsDis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsDis.Designer.cs">
+      <DependentUpon>InsDis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsEmployee.Designer.cs">
+      <DependentUpon>InsEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsEmployeeAuthority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsEmployeeAuthority.Designer.cs">
+      <DependentUpon>InsEmployeeAuthority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsMonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsMonthlyReport.Designer.cs">
+      <DependentUpon>InsMonthlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsPayment.Designer.cs">
+      <DependentUpon>InsPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsStockStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsStockStatus.Designer.cs">
+      <DependentUpon>InsStockStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Institution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Institution.Designer.cs">
+      <DependentUpon>Institution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainCategory.Designer.cs">
+      <DependentUpon>MainCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateAppellation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAppellation.Designer.cs">
+      <DependentUpon>UpdateAppellation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBranch.Designer.cs">
+      <DependentUpon>UpdateBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBranchBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBranchBoard.Designer.cs">
+      <DependentUpon>UpdateBranchBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCategory.Designer.cs">
+      <DependentUpon>UpdateCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateEmployee.Designer.cs">
+      <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMainCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMainCategory.Designer.cs">
+      <DependentUpon>UpdateMainCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProduct.Designer.cs">
+      <DependentUpon>UpdateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTypeOfPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTypeOfPayment.Designer.cs">
+      <DependentUpon>UpdateTypeOfPayment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BranchBoard.resx">
+      <DependentUpon>BranchBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchBoardDeatil.resx">
+      <DependentUpon>BranchBoardDeatil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchBoardStatus.resx">
+      <DependentUpon>BranchBoardStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchDailyReport.resx">
+      <DependentUpon>BranchDailyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchEmployee.resx">
+      <DependentUpon>BranchEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchGetPaid.resx">
+      <DependentUpon>BranchGetPaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchGetPaidDetail.resx">
+      <DependentUpon>BranchGetPaidDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchMonthlyReport.resx">
+      <DependentUpon>BranchMonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchStockStatus.resx">
+      <DependentUpon>BranchStockStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeControlCode.resx">
+      <DependentUpon>EmployeeControlCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsAppellation.resx">
+      <DependentUpon>InsAppellation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsAuthority.resx">
+      <DependentUpon>InsAuthority.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsBoardStatus.resx">
+      <DependentUpon>InsBoardStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsBranch.resx">
+      <DependentUpon>InsBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsDailyReport.resx">
+      <DependentUpon>InsDailyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsDis.resx">
+      <DependentUpon>InsDis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsEmployee.resx">
+      <DependentUpon>InsEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsEmployeeAuthority.resx">
+      <DependentUpon>InsEmployeeAuthority.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsMonthlyReport.resx">
+      <DependentUpon>InsMonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsPayment.resx">
+      <DependentUpon>InsPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsStockStatus.resx">
+      <DependentUpon>InsStockStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Institution.resx">
+      <DependentUpon>Institution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainCategory.resx">
+      <DependentUpon>MainCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UpdateAppellation.resx">
+      <DependentUpon>UpdateAppellation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBranch.resx">
+      <DependentUpon>UpdateBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBranchBoard.resx">
+      <DependentUpon>UpdateBranchBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCategory.resx">
+      <DependentUpon>UpdateCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateEmployee.resx">
+      <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMainCategory.resx">
+      <DependentUpon>UpdateMainCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProduct.resx">
+      <DependentUpon>UpdateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTypeOfPayment.resx">
+      <DependentUpon>UpdateTypeOfPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FRANCHISE_BLL\FRANCHISE_BLL.csproj">
+      <Project>{7582a99d-719b-4094-8e49-5e956a94a221}</Project>
+      <Name>FRANCHISE_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FRANCHISE_ELL\FRANCHISE_ELL.csproj">
+      <Project>{38e88092-f740-4032-8ed8-c68ff56649f6}</Project>
+      <Name>FRANCHISE_ELL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
